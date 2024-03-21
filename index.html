@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="clcustyle.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div><label for="displyBox">Calculator</label></div>
+        <div id="disply">
+            <input id="displyBox" type="text">
+        </div>
+        <div class="buttons">
+            <div class="row" id="rowOnlyOne">
+                <button class="grey" id="del" onclick="del()">AC</button>
+                <button class="grey" onclick="trim()" >DEL</button>
+                <button class="grey" onclick="percent()">%</button>
+                <button class="opp" onclick="number('÷')">&#247;</button>
+
+                <button class="num"  onclick="number('7')">7</button>
+                <button class="num"  onclick="number('8')">8</button>
+                <button class="num"  onclick="number('9')">9</button>
+                <button class="opp" onclick="number('×')">×</button>
+    
+                <button class="num"  onclick="number('4')">4</button>
+                <button class="num"  onclick="number('5')">5</button>
+                <button class="num"  onclick="number('6')">6</button>
+                <button class="opp"  onclick="number('-')">&#8722;</button>
+    
+                <button class="num"  onclick="number('1')">1</button>
+                <button class="num"  onclick="number('2')">2</button>
+                <button class="num"  onclick="number('3')">3</button>
+                <button class="opp"  onclick="number('+')">+</button>
+    
+                
+                <button class="numb" id="zero" onclick="number('0')">0</button>
+                <button class="num"  onclick="number('.')">.</button>
+                <button class="opp"  onclick="answer()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+    
+</body>
+</html>
